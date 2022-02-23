@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      width: 100vw;
+      height: 100vh;
+      padding: .5rem .75rem;
+      position: relative;
+    }
+    h1{
+      text-align: center;
+      margin-top: 150px;
+    }
+    .button{
+      padding:1.5rem 2rem;
+      border:none;
+      outline: none;
+      text-align: center;
+      background: #000;
+      color: white;
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+    }
+    #si{
+     left: 20%;
+     transform:translateY(-50%) translateX(-20%)
+    } 
+    #no{
+      left:80%;
+      transform:translateY(-50%) translateX(-80%)
+    }
+    @media screen and (min-width:968px) {
+        #si{
+          left: 35%;
+          transform:translateY(-50%) translateX(-40%)
+      } 
+      #no{
+        left:65%;
+        transform:translateY(-50%) translateX(-60%)
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>¿Quieres que te coja por el chico ❤🤤?</h1>
+  <a href="" id="si" class="button">SI</a>
+  <a href="" id="no" class="button">NO</a>
+  <script>
+    const si=document.getElementById("si"),
+          no=document.getElementById("no")
+  si.addEventListener('click',()=>{
+    alert("Sabia que aceptarías")
+  })
+  no.addEventListener('mouseover',()=>{
+    const x=Math.round(Math.random()*90),
+          y=Math.round(Math.random()*90)
+    no.style.left=x+"%"
+    no.style.top=y+"%"
+  })
+  </script>
+</body>
+</html>
