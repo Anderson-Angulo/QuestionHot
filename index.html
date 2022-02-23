@@ -31,6 +31,8 @@
       text-decoration: none;
       position: absolute;
       top: 50%;
+      box-shadow:0 2px 5px rgba(0,0,0,0.16),0 2px 10px rgba(0,0,0,.12);
+      border-radius: 10px;
     }
     #si{
      left: 20%;
@@ -63,8 +65,8 @@
     alert("Sabia que aceptarías")
   })
   no.addEventListener('mouseover',()=>{
-    const x=Math.round(Math.random()*90),
-          y=Math.round(Math.random()*90)
+    const x=Math.round(Math.random()*91),
+          y=Math.round(Math.random()*91)
     no.style.left=x+"%"
     no.style.top=y+"%"
   })
